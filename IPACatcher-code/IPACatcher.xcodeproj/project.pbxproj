@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14D82D63237E970E008D87AC /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D82D4D237E970E008D87AC /* Log.swift */; };
+		14D82D65237E970E008D87AC /* NSTask-execute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D82D4F237E970E008D87AC /* NSTask-execute.swift */; };
+		14D82D66237E970E008D87AC /* NSMenuLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D82D50237E970E008D87AC /* NSMenuLink.swift */; };
+		14D82D67237E970E008D87AC /* StringByAppendingPathComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D82D51237E970E008D87AC /* StringByAppendingPathComponent.swift */; };
+		14D82D68237E970E008D87AC /* iASShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D82D52237E970E008D87AC /* iASShared.swift */; };
+		14D82D6E237E970E008D87AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14D82D59237E970E008D87AC /* Assets.xcassets */; };
+		14D82D6F237E970E008D87AC /* Application.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14D82D5A237E970E008D87AC /* Application.xib */; };
+		14D82D70237E970E008D87AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D82D5B237E970E008D87AC /* AppDelegate.swift */; };
+		14D82D71237E970E008D87AC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D82D5C237E970E008D87AC /* MainView.swift */; };
+		14D82D72237E970E008D87AC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 14D82D5E237E970E008D87AC /* Info.plist */; };
+		30831C212A0DBC6200D57875 /* ZZNewArchiveEntry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30831BFA2A0DBC6200D57875 /* ZZNewArchiveEntry.mm */; };
+		30831C222A0DBC6200D57875 /* ZZDeflateOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 30831BFC2A0DBC6200D57875 /* ZZDeflateOutputStream.m */; };
+		30831C232A0DBC6200D57875 /* ZZStandardCryptoEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 30831C002A0DBC6200D57875 /* ZZStandardCryptoEngine.cpp */; };
+		30831C242A0DBC6200D57875 /* ZZAESDecryptInputStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30831C032A0DBC6200D57875 /* ZZAESDecryptInputStream.mm */; };
+		30831C252A0DBC6200D57875 /* ZZArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30831C082A0DBC6200D57875 /* ZZArchive.mm */; };
+		30831C262A0DBC6200D57875 /* ZZDataChannelOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 30831C092A0DBC6200D57875 /* ZZDataChannelOutput.m */; };
+		30831C272A0DBC6200D57875 /* ZZFileChannelOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 30831C0A2A0DBC6200D57875 /* ZZFileChannelOutput.m */; };
+		30831C282A0DBC6200D57875 /* ZZInflateInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 30831C0B2A0DBC6200D57875 /* ZZInflateInputStream.m */; };
+		30831C292A0DBC6200D57875 /* ZZConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 30831C0D2A0DBC6200D57875 /* ZZConstants.m */; };
+		30831C2A2A0DBC6200D57875 /* ZZArchiveEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 30831C112A0DBC6200D57875 /* ZZArchiveEntry.m */; };
+		30831C2B2A0DBC6200D57875 /* ZZError.m in Sources */ = {isa = PBXBuildFile; fileRef = 30831C122A0DBC6200D57875 /* ZZError.m */; };
+		30831C2C2A0DBC6200D57875 /* ZZOldArchiveEntryWriter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30831C132A0DBC6200D57875 /* ZZOldArchiveEntryWriter.mm */; };
+		30831C2D2A0DBC6200D57875 /* ZZDataChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30831C152A0DBC6200D57875 /* ZZDataChannel.m */; };
+		30831C2E2A0DBC6200D57875 /* ZZStoreOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 30831C162A0DBC6200D57875 /* ZZStoreOutputStream.m */; };
+		30831C2F2A0DBC6200D57875 /* ZZNewArchiveEntryWriter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30831C172A0DBC6200D57875 /* ZZNewArchiveEntryWriter.mm */; };
+		30831C302A0DBC6200D57875 /* ZZOldArchiveEntry.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30831C192A0DBC6200D57875 /* ZZOldArchiveEntry.mm */; };
+		30831C312A0DBC6200D57875 /* ZZFileChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30831C1A2A0DBC6200D57875 /* ZZFileChannel.m */; };
+		30831C322A0DBC6200D57875 /* ZZStandardDecryptInputStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30831C1E2A0DBC6200D57875 /* ZZStandardDecryptInputStream.mm */; };
+		30831C352A0DBCB900D57875 /* ECIPAHelp.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30831C342A0DBCB900D57875 /* ECIPAHelp.mm */; };
+		30831C6B2A0DC29A00D57875 /* constr_TYPE.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C372A0DC29900D57875 /* constr_TYPE.c */; };
+		30831C6C2A0DC29A00D57875 /* xer_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C3B2A0DC29900D57875 /* xer_decoder.c */; };
+		30831C6D2A0DC29A00D57875 /* per_support.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C3C2A0DC29900D57875 /* per_support.c */; };
+		30831C6E2A0DC29A00D57875 /* OBJECT_IDENTIFIER.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C3E2A0DC29900D57875 /* OBJECT_IDENTIFIER.c */; };
+		30831C6F2A0DC29A00D57875 /* BIT_STRING.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C422A0DC29900D57875 /* BIT_STRING.c */; };
+		30831C702A0DC29A00D57875 /* dump-ios-mobileprovision.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C442A0DC29900D57875 /* dump-ios-mobileprovision.c */; };
+		30831C712A0DC29A00D57875 /* ber_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C452A0DC29900D57875 /* ber_decoder.c */; };
+		30831C722A0DC29A00D57875 /* NativeInteger.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C462A0DC29900D57875 /* NativeInteger.c */; };
+		30831C732A0DC29A00D57875 /* SignedXML.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C492A0DC29900D57875 /* SignedXML.c */; };
+		30831C742A0DC29A00D57875 /* per_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C4C2A0DC29900D57875 /* per_encoder.c */; };
+		30831C752A0DC29A00D57875 /* ANY.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C502A0DC29900D57875 /* ANY.c */; };
+		30831C762A0DC29A00D57875 /* INTEGER.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C512A0DC29900D57875 /* INTEGER.c */; };
+		30831C772A0DC29A00D57875 /* der_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C562A0DC29900D57875 /* der_encoder.c */; };
+		30831C782A0DC29A00D57875 /* OCTET_STRING.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C572A0DC29900D57875 /* OCTET_STRING.c */; };
+		30831C792A0DC29A00D57875 /* constr_SEQUENCE.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C582A0DC29900D57875 /* constr_SEQUENCE.c */; };
+		30831C7A2A0DC29A00D57875 /* per_opentype.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C5A2A0DC29900D57875 /* per_opentype.c */; };
+		30831C7B2A0DC29A00D57875 /* NativeEnumerated.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C5B2A0DC29900D57875 /* NativeEnumerated.c */; };
+		30831C7C2A0DC29A00D57875 /* ber_tlv_length.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C5E2A0DC29900D57875 /* ber_tlv_length.c */; };
+		30831C7D2A0DC29A00D57875 /* per_decoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C602A0DC29900D57875 /* per_decoder.c */; };
+		30831C7E2A0DC29A00D57875 /* xer_support.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C612A0DC29900D57875 /* xer_support.c */; };
+		30831C7F2A0DC29A00D57875 /* ber_tlv_tag.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C632A0DC29900D57875 /* ber_tlv_tag.c */; };
+		30831C802A0DC29A00D57875 /* asn_codecs_prim.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C642A0DC29900D57875 /* asn_codecs_prim.c */; };
+		30831C812A0DC29A00D57875 /* constraints.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C652A0DC29900D57875 /* constraints.c */; };
+		30831C822A0DC29A00D57875 /* xer_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 30831C692A0DC29900D57875 /* xer_encoder.c */; };
+		F2C81BA6B888D0C337FD7FF3 /* Pods_IPACatcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230649A8F5C0CEE16EB43D5B /* Pods_IPACatcher.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14F30396238630A900B747F5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		14B033BB238FDF6E0038083D /* IPACatcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IPACatcher.entitlements; sourceTree = "<group>"; };
+		14D82D4D237E970E008D87AC /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		14D82D4F237E970E008D87AC /* NSTask-execute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTask-execute.swift"; sourceTree = "<group>"; };
+		14D82D50237E970E008D87AC /* NSMenuLink.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMenuLink.swift; sourceTree = "<group>"; };
+		14D82D51237E970E008D87AC /* StringByAppendingPathComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringByAppendingPathComponent.swift; sourceTree = "<group>"; };
+		14D82D52237E970E008D87AC /* iASShared.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iASShared.swift; sourceTree = "<group>"; };
+		14D82D59237E970E008D87AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14D82D5A237E970E008D87AC /* Application.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Application.xib; sourceTree = "<group>"; };
+		14D82D5B237E970E008D87AC /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14D82D5C237E970E008D87AC /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		14D82D5D237E970E008D87AC /* IPACatcher-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IPACatcher-Header.h"; sourceTree = "<group>"; };
+		14D82D5E237E970E008D87AC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		230649A8F5C0CEE16EB43D5B /* Pods_IPACatcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IPACatcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30831BF62A0DBC6200D57875 /* ZZError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZError.h; sourceTree = "<group>"; };
+		30831BF72A0DBC6200D57875 /* ZZArchiveEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZArchiveEntry.h; sourceTree = "<group>"; };
+		30831BF82A0DBC6200D57875 /* ZZChannelOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZChannelOutput.h; sourceTree = "<group>"; };
+		30831BF92A0DBC6200D57875 /* ZZOldArchiveEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZOldArchiveEntry.h; sourceTree = "<group>"; };
+		30831BFA2A0DBC6200D57875 /* ZZNewArchiveEntry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZZNewArchiveEntry.mm; sourceTree = "<group>"; };
+		30831BFB2A0DBC6200D57875 /* ZZDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZDataProvider.h; sourceTree = "<group>"; };
+		30831BFC2A0DBC6200D57875 /* ZZDeflateOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZDeflateOutputStream.m; sourceTree = "<group>"; };
+		30831BFD2A0DBC6200D57875 /* ZZConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZConstants.h; sourceTree = "<group>"; };
+		30831BFE2A0DBC6200D57875 /* ZZArchiveEntryWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZArchiveEntryWriter.h; sourceTree = "<group>"; };
+		30831BFF2A0DBC6200D57875 /* ZZHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZHeaders.h; sourceTree = "<group>"; };
+		30831C002A0DBC6200D57875 /* ZZStandardCryptoEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ZZStandardCryptoEngine.cpp; sourceTree = "<group>"; };
+		30831C012A0DBC6200D57875 /* ZZStoreOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZStoreOutputStream.h; sourceTree = "<group>"; };
+		30831C022A0DBC6200D57875 /* ZipZap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipZap.h; sourceTree = "<group>"; };
+		30831C032A0DBC6200D57875 /* ZZAESDecryptInputStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZZAESDecryptInputStream.mm; sourceTree = "<group>"; };
+		30831C042A0DBC6200D57875 /* ZZDataChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZDataChannel.h; sourceTree = "<group>"; };
+		30831C052A0DBC6200D57875 /* ZZStandardCryptoEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZStandardCryptoEngine.h; sourceTree = "<group>"; };
+		30831C062A0DBC6200D57875 /* ZZChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZChannel.h; sourceTree = "<group>"; };
+		30831C072A0DBC6200D57875 /* ZZArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZArchive.h; sourceTree = "<group>"; };
+		30831C082A0DBC6200D57875 /* ZZArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZZArchive.mm; sourceTree = "<group>"; };
+		30831C092A0DBC6200D57875 /* ZZDataChannelOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZDataChannelOutput.m; sourceTree = "<group>"; };
+		30831C0A2A0DBC6200D57875 /* ZZFileChannelOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZFileChannelOutput.m; sourceTree = "<group>"; };
+		30831C0B2A0DBC6200D57875 /* ZZInflateInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZInflateInputStream.m; sourceTree = "<group>"; };
+		30831C0C2A0DBC6200D57875 /* ZZFileChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZFileChannel.h; sourceTree = "<group>"; };
+		30831C0D2A0DBC6200D57875 /* ZZConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZConstants.m; sourceTree = "<group>"; };
+		30831C0E2A0DBC6200D57875 /* ZZDeflateOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZDeflateOutputStream.h; sourceTree = "<group>"; };
+		30831C0F2A0DBC6200D57875 /* ZZNewArchiveEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNewArchiveEntry.h; sourceTree = "<group>"; };
+		30831C102A0DBC6200D57875 /* ZZOldArchiveEntryWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZOldArchiveEntryWriter.h; sourceTree = "<group>"; };
+		30831C112A0DBC6200D57875 /* ZZArchiveEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZArchiveEntry.m; sourceTree = "<group>"; };
+		30831C122A0DBC6200D57875 /* ZZError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZError.m; sourceTree = "<group>"; };
+		30831C132A0DBC6200D57875 /* ZZOldArchiveEntryWriter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZZOldArchiveEntryWriter.mm; sourceTree = "<group>"; };
+		30831C142A0DBC6200D57875 /* ZZAESDecryptInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZAESDecryptInputStream.h; sourceTree = "<group>"; };
+		30831C152A0DBC6200D57875 /* ZZDataChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZDataChannel.m; sourceTree = "<group>"; };
+		30831C162A0DBC6200D57875 /* ZZStoreOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZStoreOutputStream.m; sourceTree = "<group>"; };
+		30831C172A0DBC6200D57875 /* ZZNewArchiveEntryWriter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZZNewArchiveEntryWriter.mm; sourceTree = "<group>"; };
+		30831C182A0DBC6200D57875 /* ZZScopeGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZScopeGuard.h; sourceTree = "<group>"; };
+		30831C192A0DBC6200D57875 /* ZZOldArchiveEntry.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZZOldArchiveEntry.mm; sourceTree = "<group>"; };
+		30831C1A2A0DBC6200D57875 /* ZZFileChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZZFileChannel.m; sourceTree = "<group>"; };
+		30831C1B2A0DBC6200D57875 /* ZZStandardDecryptInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZStandardDecryptInputStream.h; sourceTree = "<group>"; };
+		30831C1C2A0DBC6200D57875 /* ZZInflateInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZInflateInputStream.h; sourceTree = "<group>"; };
+		30831C1D2A0DBC6200D57875 /* ZZFileChannelOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZFileChannelOutput.h; sourceTree = "<group>"; };
+		30831C1E2A0DBC6200D57875 /* ZZStandardDecryptInputStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZZStandardDecryptInputStream.mm; sourceTree = "<group>"; };
+		30831C1F2A0DBC6200D57875 /* ZZDataChannelOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZDataChannelOutput.h; sourceTree = "<group>"; };
+		30831C202A0DBC6200D57875 /* ZZNewArchiveEntryWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZZNewArchiveEntryWriter.h; sourceTree = "<group>"; };
+		30831C332A0DBCB900D57875 /* ECIPAHelp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECIPAHelp.h; sourceTree = "<group>"; };
+		30831C342A0DBCB900D57875 /* ECIPAHelp.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ECIPAHelp.mm; sourceTree = "<group>"; };
+		30831C372A0DC29900D57875 /* constr_TYPE.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = constr_TYPE.c; sourceTree = "<group>"; };
+		30831C382A0DC29900D57875 /* constr_SEQUENCE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constr_SEQUENCE.h; sourceTree = "<group>"; };
+		30831C392A0DC29900D57875 /* OCTET_STRING.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCTET_STRING.h; sourceTree = "<group>"; };
+		30831C3A2A0DC29900D57875 /* der_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = der_encoder.h; sourceTree = "<group>"; };
+		30831C3B2A0DC29900D57875 /* xer_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xer_decoder.c; sourceTree = "<group>"; };
+		30831C3C2A0DC29900D57875 /* per_support.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = per_support.c; sourceTree = "<group>"; };
+		30831C3D2A0DC29900D57875 /* asn_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn_internal.h; sourceTree = "<group>"; };
+		30831C3E2A0DC29900D57875 /* OBJECT_IDENTIFIER.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OBJECT_IDENTIFIER.c; sourceTree = "<group>"; };
+		30831C3F2A0DC29900D57875 /* asn_system.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn_system.h; sourceTree = "<group>"; };
+		30831C402A0DC29900D57875 /* xer_support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xer_support.h; sourceTree = "<group>"; };
+		30831C412A0DC29900D57875 /* per_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = per_decoder.h; sourceTree = "<group>"; };
+		30831C422A0DC29900D57875 /* BIT_STRING.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = BIT_STRING.c; sourceTree = "<group>"; };
+		30831C432A0DC29900D57875 /* ber_tlv_length.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ber_tlv_length.h; sourceTree = "<group>"; };
+		30831C442A0DC29900D57875 /* dump-ios-mobileprovision.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "dump-ios-mobileprovision.c"; sourceTree = "<group>"; };
+		30831C452A0DC29900D57875 /* ber_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ber_decoder.c; sourceTree = "<group>"; };
+		30831C462A0DC29900D57875 /* NativeInteger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NativeInteger.c; sourceTree = "<group>"; };
+		30831C472A0DC29900D57875 /* per_opentype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = per_opentype.h; sourceTree = "<group>"; };
+		30831C482A0DC29900D57875 /* NativeEnumerated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeEnumerated.h; sourceTree = "<group>"; };
+		30831C492A0DC29900D57875 /* SignedXML.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SignedXML.c; sourceTree = "<group>"; };
+		30831C4A2A0DC29900D57875 /* constraints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constraints.h; sourceTree = "<group>"; };
+		30831C4B2A0DC29900D57875 /* asn_codecs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn_codecs.h; sourceTree = "<group>"; };
+		30831C4C2A0DC29900D57875 /* per_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = per_encoder.c; sourceTree = "<group>"; };
+		30831C4D2A0DC29900D57875 /* asn_codecs_prim.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn_codecs_prim.h; sourceTree = "<group>"; };
+		30831C4E2A0DC29900D57875 /* ber_tlv_tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ber_tlv_tag.h; sourceTree = "<group>"; };
+		30831C4F2A0DC29900D57875 /* asn_application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn_application.h; sourceTree = "<group>"; };
+		30831C502A0DC29900D57875 /* ANY.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ANY.c; sourceTree = "<group>"; };
+		30831C512A0DC29900D57875 /* INTEGER.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = INTEGER.c; sourceTree = "<group>"; };
+		30831C522A0DC29900D57875 /* xer_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xer_encoder.h; sourceTree = "<group>"; };
+		30831C532A0DC29900D57875 /* OBJECT_IDENTIFIER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBJECT_IDENTIFIER.h; sourceTree = "<group>"; };
+		30831C542A0DC29900D57875 /* per_support.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = per_support.h; sourceTree = "<group>"; };
+		30831C552A0DC29900D57875 /* xer_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xer_decoder.h; sourceTree = "<group>"; };
+		30831C562A0DC29900D57875 /* der_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = der_encoder.c; sourceTree = "<group>"; };
+		30831C572A0DC29900D57875 /* OCTET_STRING.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OCTET_STRING.c; sourceTree = "<group>"; };
+		30831C582A0DC29900D57875 /* constr_SEQUENCE.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = constr_SEQUENCE.c; sourceTree = "<group>"; };
+		30831C592A0DC29900D57875 /* constr_TYPE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constr_TYPE.h; sourceTree = "<group>"; };
+		30831C5A2A0DC29900D57875 /* per_opentype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = per_opentype.c; sourceTree = "<group>"; };
+		30831C5B2A0DC29900D57875 /* NativeEnumerated.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = NativeEnumerated.c; sourceTree = "<group>"; };
+		30831C5C2A0DC29900D57875 /* NativeInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeInteger.h; sourceTree = "<group>"; };
+		30831C5D2A0DC29900D57875 /* dump-ios-mobileprovision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "dump-ios-mobileprovision.h"; sourceTree = "<group>"; };
+		30831C5E2A0DC29900D57875 /* ber_tlv_length.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ber_tlv_length.c; sourceTree = "<group>"; };
+		30831C5F2A0DC29900D57875 /* ber_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ber_decoder.h; sourceTree = "<group>"; };
+		30831C602A0DC29900D57875 /* per_decoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = per_decoder.c; sourceTree = "<group>"; };
+		30831C612A0DC29900D57875 /* xer_support.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xer_support.c; sourceTree = "<group>"; };
+		30831C622A0DC29900D57875 /* BIT_STRING.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIT_STRING.h; sourceTree = "<group>"; };
+		30831C632A0DC29900D57875 /* ber_tlv_tag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ber_tlv_tag.c; sourceTree = "<group>"; };
+		30831C642A0DC29900D57875 /* asn_codecs_prim.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = asn_codecs_prim.c; sourceTree = "<group>"; };
+		30831C652A0DC29900D57875 /* constraints.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = constraints.c; sourceTree = "<group>"; };
+		30831C662A0DC29900D57875 /* per_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = per_encoder.h; sourceTree = "<group>"; };
+		30831C672A0DC29900D57875 /* SignedXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignedXML.h; sourceTree = "<group>"; };
+		30831C682A0DC29900D57875 /* INTEGER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INTEGER.h; sourceTree = "<group>"; };
+		30831C692A0DC29900D57875 /* xer_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xer_encoder.c; sourceTree = "<group>"; };
+		30831C6A2A0DC29900D57875 /* ANY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANY.h; sourceTree = "<group>"; };
+		652408C81BE743D4006FA4C6 /* IPACatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IPACatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		878DD8C0634AE37131A7B78A /* Pods-IPACatcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPACatcher.debug.xcconfig"; path = "Target Support Files/Pods-IPACatcher/Pods-IPACatcher.debug.xcconfig"; sourceTree = "<group>"; };
+		DEAA678F5F6CC405101E7D75 /* Pods-IPACatcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IPACatcher.release.xcconfig"; path = "Target Support Files/Pods-IPACatcher/Pods-IPACatcher.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		652408C51BE743D4006FA4C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2C81BA6B888D0C337FD7FF3 /* Pods_IPACatcher.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		095B22D07CD649C01C1430A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				878DD8C0634AE37131A7B78A /* Pods-IPACatcher.debug.xcconfig */,
+				DEAA678F5F6CC405101E7D75 /* Pods-IPACatcher.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		14D82D3E237E970E008D87AC /* IPACatcher */ = {
+			isa = PBXGroup;
+			children = (
+				14B033BB238FDF6E0038083D /* IPACatcher.entitlements */,
+				14D82D4C237E970E008D87AC /* Classes */,
+				14D82D53237E970E008D87AC /* Resources */,
+				14D82D59237E970E008D87AC /* Assets.xcassets */,
+				14D82D5A237E970E008D87AC /* Application.xib */,
+				14D82D5B237E970E008D87AC /* AppDelegate.swift */,
+				14D82D5C237E970E008D87AC /* MainView.swift */,
+				14D82D5D237E970E008D87AC /* IPACatcher-Header.h */,
+				14D82D5E237E970E008D87AC /* Info.plist */,
+			);
+			path = IPACatcher;
+			sourceTree = "<group>";
+		};
+		14D82D4C237E970E008D87AC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				14D82D4D237E970E008D87AC /* Log.swift */,
+				14D82D4F237E970E008D87AC /* NSTask-execute.swift */,
+				14D82D50237E970E008D87AC /* NSMenuLink.swift */,
+				14D82D51237E970E008D87AC /* StringByAppendingPathComponent.swift */,
+				14D82D52237E970E008D87AC /* iASShared.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		14D82D53237E970E008D87AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30831C362A0DC29900D57875 /* provision-dump */,
+				30831BF52A0DBC6200D57875 /* ZipZap */,
+				30831C332A0DBCB900D57875 /* ECIPAHelp.h */,
+				30831C342A0DBCB900D57875 /* ECIPAHelp.mm */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		30831BF52A0DBC6200D57875 /* ZipZap */ = {
+			isa = PBXGroup;
+			children = (
+				30831C022A0DBC6200D57875 /* ZipZap.h */,
+				30831C142A0DBC6200D57875 /* ZZAESDecryptInputStream.h */,
+				30831C032A0DBC6200D57875 /* ZZAESDecryptInputStream.mm */,
+				30831C072A0DBC6200D57875 /* ZZArchive.h */,
+				30831C082A0DBC6200D57875 /* ZZArchive.mm */,
+				30831BF72A0DBC6200D57875 /* ZZArchiveEntry.h */,
+				30831C112A0DBC6200D57875 /* ZZArchiveEntry.m */,
+				30831BFE2A0DBC6200D57875 /* ZZArchiveEntryWriter.h */,
+				30831C062A0DBC6200D57875 /* ZZChannel.h */,
+				30831BF82A0DBC6200D57875 /* ZZChannelOutput.h */,
+				30831BFD2A0DBC6200D57875 /* ZZConstants.h */,
+				30831C0D2A0DBC6200D57875 /* ZZConstants.m */,
+				30831C042A0DBC6200D57875 /* ZZDataChannel.h */,
+				30831C152A0DBC6200D57875 /* ZZDataChannel.m */,
+				30831C1F2A0DBC6200D57875 /* ZZDataChannelOutput.h */,
+				30831C092A0DBC6200D57875 /* ZZDataChannelOutput.m */,
+				30831BFB2A0DBC6200D57875 /* ZZDataProvider.h */,
+				30831C0E2A0DBC6200D57875 /* ZZDeflateOutputStream.h */,
+				30831BFC2A0DBC6200D57875 /* ZZDeflateOutputStream.m */,
+				30831BF62A0DBC6200D57875 /* ZZError.h */,
+				30831C122A0DBC6200D57875 /* ZZError.m */,
+				30831C0C2A0DBC6200D57875 /* ZZFileChannel.h */,
+				30831C1A2A0DBC6200D57875 /* ZZFileChannel.m */,
+				30831C1D2A0DBC6200D57875 /* ZZFileChannelOutput.h */,
+				30831C0A2A0DBC6200D57875 /* ZZFileChannelOutput.m */,
+				30831BFF2A0DBC6200D57875 /* ZZHeaders.h */,
+				30831C1C2A0DBC6200D57875 /* ZZInflateInputStream.h */,
+				30831C0B2A0DBC6200D57875 /* ZZInflateInputStream.m */,
+				30831C0F2A0DBC6200D57875 /* ZZNewArchiveEntry.h */,
+				30831BFA2A0DBC6200D57875 /* ZZNewArchiveEntry.mm */,
+				30831C202A0DBC6200D57875 /* ZZNewArchiveEntryWriter.h */,
+				30831C172A0DBC6200D57875 /* ZZNewArchiveEntryWriter.mm */,
+				30831BF92A0DBC6200D57875 /* ZZOldArchiveEntry.h */,
+				30831C192A0DBC6200D57875 /* ZZOldArchiveEntry.mm */,
+				30831C102A0DBC6200D57875 /* ZZOldArchiveEntryWriter.h */,
+				30831C132A0DBC6200D57875 /* ZZOldArchiveEntryWriter.mm */,
+				30831C182A0DBC6200D57875 /* ZZScopeGuard.h */,
+				30831C002A0DBC6200D57875 /* ZZStandardCryptoEngine.cpp */,
+				30831C052A0DBC6200D57875 /* ZZStandardCryptoEngine.h */,
+				30831C1B2A0DBC6200D57875 /* ZZStandardDecryptInputStream.h */,
+				30831C1E2A0DBC6200D57875 /* ZZStandardDecryptInputStream.mm */,
+				30831C012A0DBC6200D57875 /* ZZStoreOutputStream.h */,
+				30831C162A0DBC6200D57875 /* ZZStoreOutputStream.m */,
+			);
+			path = ZipZap;
+			sourceTree = "<group>";
+		};
+		30831C362A0DC29900D57875 /* provision-dump */ = {
+			isa = PBXGroup;
+			children = (
+				30831C372A0DC29900D57875 /* constr_TYPE.c */,
+				30831C382A0DC29900D57875 /* constr_SEQUENCE.h */,
+				30831C392A0DC29900D57875 /* OCTET_STRING.h */,
+				30831C3A2A0DC29900D57875 /* der_encoder.h */,
+				30831C3B2A0DC29900D57875 /* xer_decoder.c */,
+				30831C3C2A0DC29900D57875 /* per_support.c */,
+				30831C3D2A0DC29900D57875 /* asn_internal.h */,
+				30831C3E2A0DC29900D57875 /* OBJECT_IDENTIFIER.c */,
+				30831C3F2A0DC29900D57875 /* asn_system.h */,
+				30831C402A0DC29900D57875 /* xer_support.h */,
+				30831C412A0DC29900D57875 /* per_decoder.h */,
+				30831C422A0DC29900D57875 /* BIT_STRING.c */,
+				30831C432A0DC29900D57875 /* ber_tlv_length.h */,
+				30831C442A0DC29900D57875 /* dump-ios-mobileprovision.c */,
+				30831C452A0DC29900D57875 /* ber_decoder.c */,
+				30831C462A0DC29900D57875 /* NativeInteger.c */,
+				30831C472A0DC29900D57875 /* per_opentype.h */,
+				30831C482A0DC29900D57875 /* NativeEnumerated.h */,
+				30831C492A0DC29900D57875 /* SignedXML.c */,
+				30831C4A2A0DC29900D57875 /* constraints.h */,
+				30831C4B2A0DC29900D57875 /* asn_codecs.h */,
+				30831C4C2A0DC29900D57875 /* per_encoder.c */,
+				30831C4D2A0DC29900D57875 /* asn_codecs_prim.h */,
+				30831C4E2A0DC29900D57875 /* ber_tlv_tag.h */,
+				30831C4F2A0DC29900D57875 /* asn_application.h */,
+				30831C502A0DC29900D57875 /* ANY.c */,
+				30831C512A0DC29900D57875 /* INTEGER.c */,
+				30831C522A0DC29900D57875 /* xer_encoder.h */,
+				30831C532A0DC29900D57875 /* OBJECT_IDENTIFIER.h */,
+				30831C542A0DC29900D57875 /* per_support.h */,
+				30831C552A0DC29900D57875 /* xer_decoder.h */,
+				30831C562A0DC29900D57875 /* der_encoder.c */,
+				30831C572A0DC29900D57875 /* OCTET_STRING.c */,
+				30831C582A0DC29900D57875 /* constr_SEQUENCE.c */,
+				30831C592A0DC29900D57875 /* constr_TYPE.h */,
+				30831C5A2A0DC29900D57875 /* per_opentype.c */,
+				30831C5B2A0DC29900D57875 /* NativeEnumerated.c */,
+				30831C5C2A0DC29900D57875 /* NativeInteger.h */,
+				30831C5D2A0DC29900D57875 /* dump-ios-mobileprovision.h */,
+				30831C5E2A0DC29900D57875 /* ber_tlv_length.c */,
+				30831C5F2A0DC29900D57875 /* ber_decoder.h */,
+				30831C602A0DC29900D57875 /* per_decoder.c */,
+				30831C612A0DC29900D57875 /* xer_support.c */,
+				30831C622A0DC29900D57875 /* BIT_STRING.h */,
+				30831C632A0DC29900D57875 /* ber_tlv_tag.c */,
+				30831C642A0DC29900D57875 /* asn_codecs_prim.c */,
+				30831C652A0DC29900D57875 /* constraints.c */,
+				30831C662A0DC29900D57875 /* per_encoder.h */,
+				30831C672A0DC29900D57875 /* SignedXML.h */,
+				30831C682A0DC29900D57875 /* INTEGER.h */,
+				30831C692A0DC29900D57875 /* xer_encoder.c */,
+				30831C6A2A0DC29900D57875 /* ANY.h */,
+			);
+			path = "provision-dump";
+			sourceTree = "<group>";
+		};
+		652408BF1BE743D4006FA4C6 = {
+			isa = PBXGroup;
+			children = (
+				14D82D3E237E970E008D87AC /* IPACatcher */,
+				652408C91BE743D4006FA4C6 /* Products */,
+				095B22D07CD649C01C1430A2 /* Pods */,
+				6CB50D7DE08EA82651C53867 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		652408C91BE743D4006FA4C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				652408C81BE743D4006FA4C6 /* IPACatcher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CB50D7DE08EA82651C53867 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				230649A8F5C0CEE16EB43D5B /* Pods_IPACatcher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		652408C71BE743D4006FA4C6 /* IPACatcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 652408ED1BE743D4006FA4C6 /* Build configuration list for PBXNativeTarget "IPACatcher" */;
+			buildPhases = (
+				F6DC175BD48C212EA8BECD9B /* [CP] Check Pods Manifest.lock */,
+				652408C41BE743D4006FA4C6 /* Sources */,
+				652408C51BE743D4006FA4C6 /* Frameworks */,
+				652408C61BE743D4006FA4C6 /* Resources */,
+				14F30396238630A900B747F5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IPACatcher;
+			productName = AppSigner;
+			productReference = 652408C81BE743D4006FA4C6 /* IPACatcher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		652408C01BE743D4006FA4C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Daniel Radtke";
+				TargetAttributes = {
+					652408C71BE743D4006FA4C6 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = CK4U5D4S2Z;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 652408C31BE743D4006FA4C6 /* Build configuration list for PBXProject "IPACatcher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 652408BF1BE743D4006FA4C6;
+			productRefGroup = 652408C91BE743D4006FA4C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				652408C71BE743D4006FA4C6 /* IPACatcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		652408C61BE743D4006FA4C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14D82D72237E970E008D87AC /* Info.plist in Resources */,
+				14D82D6E237E970E008D87AC /* Assets.xcassets in Resources */,
+				14D82D6F237E970E008D87AC /* Application.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F6DC175BD48C212EA8BECD9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IPACatcher-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		652408C41BE743D4006FA4C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30831C732A0DC29A00D57875 /* SignedXML.c in Sources */,
+				14D82D68237E970E008D87AC /* iASShared.swift in Sources */,
+				30831C722A0DC29A00D57875 /* NativeInteger.c in Sources */,
+				30831C742A0DC29A00D57875 /* per_encoder.c in Sources */,
+				30831C6C2A0DC29A00D57875 /* xer_decoder.c in Sources */,
+				30831C212A0DBC6200D57875 /* ZZNewArchiveEntry.mm in Sources */,
+				30831C282A0DBC6200D57875 /* ZZInflateInputStream.m in Sources */,
+				30831C772A0DC29A00D57875 /* der_encoder.c in Sources */,
+				30831C712A0DC29A00D57875 /* ber_decoder.c in Sources */,
+				30831C7F2A0DC29A00D57875 /* ber_tlv_tag.c in Sources */,
+				14D82D70237E970E008D87AC /* AppDelegate.swift in Sources */,
+				14D82D67237E970E008D87AC /* StringByAppendingPathComponent.swift in Sources */,
+				14D82D63237E970E008D87AC /* Log.swift in Sources */,
+				30831C822A0DC29A00D57875 /* xer_encoder.c in Sources */,
+				30831C2E2A0DBC6200D57875 /* ZZStoreOutputStream.m in Sources */,
+				14D82D66237E970E008D87AC /* NSMenuLink.swift in Sources */,
+				30831C352A0DBCB900D57875 /* ECIPAHelp.mm in Sources */,
+				30831C7C2A0DC29A00D57875 /* ber_tlv_length.c in Sources */,
+				30831C262A0DBC6200D57875 /* ZZDataChannelOutput.m in Sources */,
+				30831C7E2A0DC29A00D57875 /* xer_support.c in Sources */,
+				30831C2B2A0DBC6200D57875 /* ZZError.m in Sources */,
+				30831C302A0DBC6200D57875 /* ZZOldArchiveEntry.mm in Sources */,
+				14D82D71237E970E008D87AC /* MainView.swift in Sources */,
+				30831C6B2A0DC29A00D57875 /* constr_TYPE.c in Sources */,
+				30831C222A0DBC6200D57875 /* ZZDeflateOutputStream.m in Sources */,
+				30831C7B2A0DC29A00D57875 /* NativeEnumerated.c in Sources */,
+				30831C252A0DBC6200D57875 /* ZZArchive.mm in Sources */,
+				30831C2F2A0DBC6200D57875 /* ZZNewArchiveEntryWriter.mm in Sources */,
+				30831C2A2A0DBC6200D57875 /* ZZArchiveEntry.m in Sources */,
+				30831C292A0DBC6200D57875 /* ZZConstants.m in Sources */,
+				30831C812A0DC29A00D57875 /* constraints.c in Sources */,
+				30831C6D2A0DC29A00D57875 /* per_support.c in Sources */,
+				30831C6E2A0DC29A00D57875 /* OBJECT_IDENTIFIER.c in Sources */,
+				30831C7A2A0DC29A00D57875 /* per_opentype.c in Sources */,
+				30831C802A0DC29A00D57875 /* asn_codecs_prim.c in Sources */,
+				30831C6F2A0DC29A00D57875 /* BIT_STRING.c in Sources */,
+				30831C2D2A0DBC6200D57875 /* ZZDataChannel.m in Sources */,
+				30831C782A0DC29A00D57875 /* OCTET_STRING.c in Sources */,
+				30831C322A0DBC6200D57875 /* ZZStandardDecryptInputStream.mm in Sources */,
+				30831C2C2A0DBC6200D57875 /* ZZOldArchiveEntryWriter.mm in Sources */,
+				14D82D65237E970E008D87AC /* NSTask-execute.swift in Sources */,
+				30831C792A0DC29A00D57875 /* constr_SEQUENCE.c in Sources */,
+				30831C762A0DC29A00D57875 /* INTEGER.c in Sources */,
+				30831C312A0DBC6200D57875 /* ZZFileChannel.m in Sources */,
+				30831C272A0DBC6200D57875 /* ZZFileChannelOutput.m in Sources */,
+				30831C232A0DBC6200D57875 /* ZZStandardCryptoEngine.cpp in Sources */,
+				30831C752A0DC29A00D57875 /* ANY.c in Sources */,
+				30831C7D2A0DC29A00D57875 /* per_decoder.c in Sources */,
+				30831C242A0DBC6200D57875 /* ZZAESDecryptInputStream.mm in Sources */,
+				30831C702A0DC29A00D57875 /* dump-ios-mobileprovision.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		652408EB1BE743D4006FA4C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		652408EC1BE743D4006FA4C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		652408EE1BE743D4006FA4C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 878DD8C0634AE37131A7B78A /* Pods-IPACatcher.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CK4U5D4S2Z;
+				INFOPLIST_FILE = "$(SRCROOT)/IPACatcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IPACatcher/Resources",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.even-cheng.IPACatcher";
+				PRODUCT_NAME = IPACatcher;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "IPACatcher/IPACatcher-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		652408EF1BE743D4006FA4C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEAA678F5F6CC405101E7D75 /* Pods-IPACatcher.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CK4U5D4S2Z;
+				INFOPLIST_FILE = "$(SRCROOT)/IPACatcher/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/IPACatcher/Resources",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.even-cheng.IPACatcher";
+				PRODUCT_NAME = IPACatcher;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "IPACatcher/IPACatcher-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		652408C31BE743D4006FA4C6 /* Build configuration list for PBXProject "IPACatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652408EB1BE743D4006FA4C6 /* Debug */,
+				652408EC1BE743D4006FA4C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		652408ED1BE743D4006FA4C6 /* Build configuration list for PBXNativeTarget "IPACatcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				652408EE1BE743D4006FA4C6 /* Debug */,
+				652408EF1BE743D4006FA4C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 652408C01BE743D4006FA4C6 /* Project object */;
+}
