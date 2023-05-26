@@ -250,6 +250,9 @@ class MainView: NSView {
         if (currentUrl.hasSuffix("\t")) {
             currentUrl = currentUrl.replacingOccurrences(of: "\t", with: "")
         }
+        if (currentUrl.hasSuffix("\r")) {
+            currentUrl = currentUrl.replacingOccurrences(of: "\r", with: "")
+        }
         if (currentUrl.count <= 0) {
             loadNext()
             return
@@ -270,40 +273,54 @@ extension MainView : WKNavigationDelegate, URLSessionDataDelegate, URLSessionDel
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
 
         if (webView.url?.host?.contains("pgyer.") == true) {
-    
-            webView.evaluateJavaScript("document.getElementById('down_load').text") { (obj: Any?, error: Error?) in
-                if (error != nil){
-                    self.setStatus("下载失败:\(String(describing: error!.localizedDescription))")
-                    print(error!)
-                    self.loadNext()
-                   return
+            
+            webView.evaluateJavaScript("document.getElementsByClassName('breadcrumb ').item(0).innerHTML.toString()") { (obj: Any?, error: Error?) in
+                
+                if (error == nil){
+                    
+                    var content: String = obj as! String
+                    let iosValid = content.contains("适用于 iOS 设备")
+                    if iosValid == false {
+                        self.setStatus("下载失败: 非iOS安装包")
+                        self.loadNext()
+                        return
+                    }
                 }
                 
-                var title: String = obj as! String
-                title = title.replacingOccurrences(of: " ", with: "")
-                title = title.replacingOccurrences(of: "\n", with: "")
-                if (title == "安装") {
-                    
-                    webView.evaluateJavaScript("install_loading()") { (obj: Any?, error: Error?) in
-                        if (error != nil){
-                            
-                            self.setStatus("下载失败:\(String(describing: error!.localizedDescription))")
-                            print(error!)
-                            self.loadNext()
-                        }
+                webView.evaluateJavaScript("document.getElementById('down_load').text") { (obj: Any?, error: Error?) in
+                    if (error != nil){
+                        self.setStatus("下载失败:\(String(describing: error!.localizedDescription))")
+                        print(error!)
+                        self.loadNext()
+                       return
                     }
-                    
-                } else {
-                    self.setStatus("\(String(describing: title))")
-                    self.loadNext()
+
+                    var title: String = obj as! String
+                    title = title.replacingOccurrences(of: " ", with: "")
+                    title = title.replacingOccurrences(of: "\n", with: "")
+                    if (title == "安装") {
+
+                        webView.evaluateJavaScript("install_loading()") { (obj: Any?, error: Error?) in
+                            if (error != nil){
+
+                                self.setStatus("下载失败:\(String(describing: error!.localizedDescription))")
+                                print(error!)
+                                self.loadNext()
+                            }
+                        }
+
+                    } else {
+                        self.setStatus("\(String(describing: title))")
+                        self.loadNext()
+                    }
                 }
             }
-    
+
         } else if (webView.url?.host?.contains("fir.") == true) {
-            
+
             let jsStr = "document.querySelector(\"body.app > div.out-container > div.main > header > div.table-container > div.cell-container > div.app-brief > div#actions.type-ios\").style.display = \"block\";";
             webView.evaluateJavaScript(jsStr) { (obj: Any?, error: Error?) in
-                
+
             }
             webView.evaluateJavaScript("FIR.install()")
         }
