@@ -279,7 +279,7 @@ extension MainView : WKNavigationDelegate, URLSessionDataDelegate, URLSessionDel
                 if (error == nil){
                     
                     var content: String = obj as! String
-                    let iosValid = content.contains("适用于 iOS 设备")
+                    let iosValid = content.contains("适用于 iOS 设备") || content.contains("For iOS device")
                     if iosValid == false {
                         self.setStatus("下载失败: 非iOS安装包")
                         self.loadNext()
@@ -298,7 +298,7 @@ extension MainView : WKNavigationDelegate, URLSessionDataDelegate, URLSessionDel
                     var title: String = obj as! String
                     title = title.replacingOccurrences(of: " ", with: "")
                     title = title.replacingOccurrences(of: "\n", with: "")
-                    if (title == "安装") {
+                    if (title == "安装" || title == "Install") {
 
                         webView.evaluateJavaScript("install_loading()") { (obj: Any?, error: Error?) in
                             if (error != nil){
